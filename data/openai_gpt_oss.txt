@@ -1,0 +1,5 @@
+# OpenAI gpt-oss
+
+gpt-oss is a family of open-weight language models released by OpenAI in August 2025 under the Apache 2.0 licence. The family has two models, gpt-oss-120b and gpt-oss-20b.
+
+Both models use a mixture-of-experts Transformer design and are reasoning models, which means they produce an internal chain of thought before the final answer. Their reasoning effort can be set to low, medium or high. gpt-oss-20b is small enough to run on a single consumer-grade accelerator with 16 GB of memory.

@@ -1,0 +1,5 @@
+# Groq and the LPU
+
+Groq is an AI inference company that designed the Language Processing Unit, or LPU, a chip built for fast sequential token generation. Groq exposes hosted models through GroqCloud, an API with a chat-completions interface similar to the OpenAI API.
+
+GroqCloud serves open-weight models, including the gpt-oss family released by OpenAI. Developers use it when low latency matters, for example in interactive question answering systems.

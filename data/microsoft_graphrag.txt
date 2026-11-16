@@ -1,0 +1,7 @@
+# Microsoft GraphRAG
+
+GraphRAG is a retrieval-augmented generation approach from Microsoft Research. It was described in the 2024 paper From Local to Global: A Graph RAG Approach to Query-Focused Summarization by Darren Edge and colleagues.
+
+GraphRAG uses a large language model to extract entities and relationships from source documents and build a knowledge graph. It then applies the Leiden algorithm to detect communities of closely related entities and generates a summary for each community. These community summaries let the system answer global questions about an entire corpus, which plain vector RAG handles poorly.
+
+GraphRAG extends retrieval-augmented generation by adding graph structure to the retrieval step.

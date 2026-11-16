@@ -1,0 +1,5 @@
+# Property Graphs and RDF
+
+There are two major graph data models. The property graph model, used by Neo4j, stores properties directly on nodes and relationships and is queried with Cypher.
+
+The Resource Description Framework, or RDF, represents all data as subject-predicate-object triples and is standardised by the W3C. RDF data is queried with SPARQL, the W3C query language for RDF. RDF identifies resources with URIs, which suits data published across the web, while property graphs are often preferred for application development.

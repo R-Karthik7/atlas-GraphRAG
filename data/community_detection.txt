@@ -1,0 +1,5 @@
+# Community Detection: Louvain and Leiden
+
+Community detection groups the nodes of a graph into clusters that are densely connected internally. The Louvain method, published by Vincent Blondel and colleagues in 2008, greedily optimises modularity.
+
+The Leiden algorithm was introduced in 2019 by Vincent Traag, Ludo Waltman and Nees Jan van Eck at Leiden University. It fixes a weakness of Louvain, which can produce badly connected communities, by guaranteeing that communities are well connected.

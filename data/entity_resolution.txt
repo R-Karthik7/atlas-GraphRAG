@@ -1,0 +1,5 @@
+# Entity Extraction and Resolution
+
+Entity extraction identifies the people, organisations, technologies and concepts mentioned in text. Relation extraction then finds how those entities are connected.
+
+Entity resolution merges different surface forms of the same real-world entity, for example Knowledge Graph and Knowledge Graphs, or RAG and Retrieval-Augmented Generation. Without it, a knowledge graph fragments into duplicate nodes and graph traversal cannot connect facts that were extracted from different documents.

@@ -1,0 +1,5 @@
+# Chunking Strategies
+
+Chunking splits documents into passages before indexing. Fixed-size chunking cuts text after a set number of characters or tokens and is simple but may split sentences. Sentence-aware chunking keeps whole sentences together. Semantic chunking starts a new chunk when the topic changes.
+
+Small chunks give precise retrieval but may lose context, while large chunks keep context but dilute the embedding with unrelated content. Many systems add overlap between neighbouring chunks so that facts near a boundary are not lost.

@@ -1,0 +1,7 @@
+# Transformers, BERT and MiniLM
+
+The Transformer architecture was introduced in the 2017 paper Attention Is All You Need by researchers at Google. It replaced recurrence with self-attention, which lets a model weigh every token in a sequence against every other token.
+
+BERT, short for Bidirectional Encoder Representations from Transformers, was released by Google researchers in 2018. BERT uses only the encoder part of the Transformer and is pre-trained with masked language modelling.
+
+MiniLM was developed by Microsoft Research. It compresses large Transformer models through deep self-attention distillation, producing small models that keep most of the accuracy of their larger teachers.

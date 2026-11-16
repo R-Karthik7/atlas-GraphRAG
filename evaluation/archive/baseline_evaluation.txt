@@ -1,0 +1,81 @@
+# BASELINE RAG EVALUATION
+
+Project: GraphRAG – Multi-Hop Question Answering  
+LLM: Groq API  
+Embedding Model: sentence-transformers/all-MiniLM-L6-v2  
+Retrieval Method: Vector Similarity Search (Cosine Similarity)  
+Top-K: 3
+
+## TEST 1: What is Neo4j?
+
+- Retrieved sources: neo4j_notes.txt, sample_document.txt
+- Answer: Neo4j is a graph database that stores information as nodes and relationships. Nodes contain labels and properties, while relationships connect nodes.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 2: What is Cypher used for?
+
+- Retrieved sources: neo4j_notes.txt, sample_document.txt
+- Answer: Cypher is Neo4j's declarative query language used to find graph patterns, create nodes and relationships, and filter results.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 3: How does vector retrieval work?
+
+- Retrieved sources: sample_document.txt, rag_notes.txt
+- Answer: Converts text and questions into embeddings, compares them using vector similarity, and retrieves the most relevant chunks.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 4: What are the steps in a RAG pipeline?
+
+- Retrieved sources: rag_notes.txt, neo4j_notes.txt, sample_document.txt
+- Answer: Load documents, split into chunks, generate embeddings, retrieve relevant chunks, and pass context to the language model.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 5: What is GraphRAG?
+
+- Retrieved sources: sample_document.txt, neo4j_notes.txt
+- Answer: GraphRAG combines knowledge graph retrieval with vector retrieval to answer questions requiring connections across different sources.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 6: How do graph databases represent information?
+
+- Retrieved sources: sample_document.txt, neo4j_notes.txt
+- Answer: Graph databases represent information using nodes (entities) and relationships (connections). Both can contain properties.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## TEST 7: Who invented Python?
+
+- Retrieved sources: Retrieved chunks did not contain relevant information.
+- Answer: The system correctly refused to answer because the supplied documents did not contain the information.
+- Retrieval quality: Poor / No relevant context
+- Answer quality: Good
+- Correct answer: Yes (correct refusal)
+
+## TEST 8: How does Neo4j connect nodes and relationships?
+
+- Retrieved sources: neo4j_notes.txt, sample_document.txt
+- Answer: Neo4j uses relationships as directed links between nodes. Relationships can also contain properties and are defined or queried using Cypher.
+- Retrieval quality: Good
+- Answer quality: Good
+- Correct answer: Yes
+
+## BASELINE OBSERVATION
+
+1. The system successfully retrieves relevant document chunks.
+2. Groq generates answers using the retrieved context.
+3. The system can refuse questions that are outside the available document knowledge.
+4. The current system uses vector retrieval only.
+5. Knowledge graph construction and graph-based retrieval are not implemented yet.
+
+Conclusion: The baseline RAG implementation is working and ready for comparison with the future GraphRAG implementation.

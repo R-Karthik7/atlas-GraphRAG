@@ -1,0 +1,5 @@
+# Cypher Query Language
+
+Cypher is the declarative graph query language that was created for Neo4j. Queries describe graph patterns using an ASCII-art style syntax, where parentheses represent nodes and square brackets represent relationships, for example (a)-[:KNOWS]->(b).
+
+In 2015 Neo4j released the openCypher project, which published Cypher as an open specification so that other database vendors could implement it. Cypher later influenced GQL, the ISO/IEC 39075 standard for graph query languages that was published in 2024.

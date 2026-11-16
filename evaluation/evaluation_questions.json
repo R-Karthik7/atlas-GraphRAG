@@ -1,0 +1,766 @@
+[
+  {
+    "id": "Q01",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "What is Neo4j?",
+    "expected_answer": "Neo4j is a graph database that stores data as nodes and relationships.",
+    "supporting_sources": [
+      "neo4j_notes.txt"
+    ],
+    "evidence": [
+      "stores data as nodes and relationships"
+    ],
+    "answer_keywords": [
+      "graph database",
+      "nodes",
+      "relationships"
+    ]
+  },
+  {
+    "id": "Q02",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "Who co-founded Neo4j?",
+    "expected_answer": "Emil Eifrem, Johan Svensson and Peter Neubauer co-founded Neo4j, Inc.",
+    "supporting_sources": [
+      "neo4j_overview.txt"
+    ],
+    "evidence": [
+      "emil eifrem"
+    ],
+    "answer_keywords": [
+      "eifrem",
+      "svensson",
+      "neubauer"
+    ]
+  },
+  {
+    "id": "Q03",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "In which programming language is Neo4j implemented?",
+    "expected_answer": "Neo4j is implemented in Java.",
+    "supporting_sources": [
+      "neo4j_overview.txt"
+    ],
+    "evidence": [
+      "implemented in java"
+    ],
+    "answer_keywords": [
+      "java"
+    ]
+  },
+  {
+    "id": "Q04",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "What does HNSW stand for?",
+    "expected_answer": "Hierarchical Navigable Small World.",
+    "supporting_sources": [
+      "hnsw_algorithm.txt"
+    ],
+    "evidence": [
+      "hierarchical navigable small world"
+    ],
+    "answer_keywords": [
+      "hierarchical navigable small world"
+    ]
+  },
+  {
+    "id": "Q05",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "How many dimensions do all-MiniLM-L6-v2 embeddings have?",
+    "expected_answer": "384 dimensions.",
+    "supporting_sources": [
+      "sentence_transformers.txt"
+    ],
+    "evidence": [
+      "384-dimensional"
+    ],
+    "answer_keywords": [
+      "384"
+    ]
+  },
+  {
+    "id": "Q06",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "What value of k did the original Reciprocal Rank Fusion paper use?",
+    "expected_answer": "The original paper used k equal to 60.",
+    "supporting_sources": [
+      "reciprocal_rank_fusion.txt"
+    ],
+    "evidence": [
+      "k equal to 60"
+    ],
+    "answer_keywords": [
+      "60"
+    ]
+  },
+  {
+    "id": "Q07",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "What is a Language Processing Unit?",
+    "expected_answer": "A chip designed by Groq for fast sequential token generation.",
+    "supporting_sources": [
+      "groq_inference.txt"
+    ],
+    "evidence": [
+      "language processing unit"
+    ],
+    "answer_keywords": [
+      "chip"
+    ]
+  },
+  {
+    "id": "Q08",
+    "type": "direct",
+    "hops": 1,
+    "answerable": true,
+    "question": "Which query language is used to query RDF data?",
+    "expected_answer": "SPARQL, the W3C query language for RDF.",
+    "supporting_sources": [
+      "property_graph_vs_rdf.txt"
+    ],
+    "evidence": [
+      "sparql"
+    ],
+    "answer_keywords": [
+      "sparql"
+    ]
+  },
+  {
+    "id": "Q09",
+    "type": "technical",
+    "hops": 1,
+    "answerable": true,
+    "question": "What are MATCH, CREATE and MERGE used for in Cypher?",
+    "expected_answer": "MATCH finds graph patterns, CREATE adds nodes or relationships, and MERGE matches existing patterns or creates missing ones.",
+    "supporting_sources": [
+      "neo4j_notes.txt"
+    ],
+    "evidence": [
+      "match finds graph patterns",
+      "merge matches existing patterns or creates missing ones"
+    ],
+    "answer_keywords": [
+      "patterns",
+      "missing"
+    ]
+  },
+  {
+    "id": "Q10",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "How does a RAG pipeline generate grounded answers?",
+    "expected_answer": "A RAG pipeline loads documents, splits them into chunks, embeds them, retrieves relevant chunks for a query and passes that context to a language model.",
+    "supporting_sources": [
+      "rag_notes.txt"
+    ],
+    "evidence": [
+      "splits them into chunks"
+    ],
+    "answer_keywords": [
+      "chunk",
+      "embedding",
+      "language model"
+    ]
+  },
+  {
+    "id": "Q11",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "Why does Reciprocal Rank Fusion not need score normalisation?",
+    "expected_answer": "Because RRF uses only the ranks of documents, not their scores.",
+    "supporting_sources": [
+      "reciprocal_rank_fusion.txt"
+    ],
+    "evidence": [
+      "uses only ranks"
+    ],
+    "answer_keywords": [
+      "rank"
+    ]
+  },
+  {
+    "id": "Q12",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "What problem does entity resolution solve in a knowledge graph?",
+    "expected_answer": "It merges different surface forms of the same entity so the graph does not fragment into duplicate nodes.",
+    "supporting_sources": [
+      "entity_resolution.txt"
+    ],
+    "evidence": [
+      "fragments into duplicate nodes"
+    ],
+    "answer_keywords": [
+      "duplicate"
+    ]
+  },
+  {
+    "id": "Q13",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "Why should a RAG system be tested on questions its documents cannot answer?",
+    "expected_answer": "A trustworthy RAG system must refuse rather than hallucinate.",
+    "supporting_sources": [
+      "rag_evaluation.txt"
+    ],
+    "evidence": [
+      "refuse rather than hallucinate"
+    ],
+    "answer_keywords": [
+      "refuse"
+    ]
+  },
+  {
+    "id": "Q14",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "What are the trade-offs between small and large chunks?",
+    "expected_answer": "Small chunks give precise retrieval but may lose context; large chunks keep context but dilute the embedding.",
+    "supporting_sources": [
+      "chunking_strategies.txt"
+    ],
+    "evidence": [
+      "small chunks give precise retrieval",
+      "large chunks keep context"
+    ],
+    "answer_keywords": [
+      "context",
+      "precise"
+    ]
+  },
+  {
+    "id": "Q15",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "How does hybrid search differ from purely lexical retrieval?",
+    "expected_answer": "Hybrid search adds dense retrieval, which matches meaning, to lexical matching of exact terms.",
+    "supporting_sources": [
+      "hybrid_search.txt"
+    ],
+    "evidence": [
+      "dense retrieval matches meaning"
+    ],
+    "answer_keywords": [
+      "meaning"
+    ]
+  },
+  {
+    "id": "Q16",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "What does faithfulness measure when evaluating a RAG system?",
+    "expected_answer": "Whether every claim in an answer is supported by the retrieved context.",
+    "supporting_sources": [
+      "rag_evaluation.txt"
+    ],
+    "evidence": [
+      "supported by the retrieved context"
+    ],
+    "answer_keywords": [
+      "supported"
+    ]
+  },
+  {
+    "id": "Q17",
+    "type": "conceptual",
+    "hops": 1,
+    "answerable": true,
+    "question": "Why does vector retrieval often fail on multi-hop questions and how can a graph help?",
+    "expected_answer": "The bridge entity is not in the question, so the second passage is not similar to it; graph traversal follows relationships to the bridge entity.",
+    "supporting_sources": [
+      "multi_hop_question_answering.txt"
+    ],
+    "evidence": [
+      "bridge entity is not mentioned in the question",
+      "follow relationships"
+    ],
+    "answer_keywords": [
+      "bridge",
+      "relationship"
+    ]
+  },
+  {
+    "id": "Q18",
+    "type": "semantic",
+    "hops": 1,
+    "answerable": true,
+    "question": "How can a system identify passages that mean something similar to a user's question?",
+    "expected_answer": "Vector retrieval uses embeddings to find text that is semantically similar to the question.",
+    "supporting_sources": [
+      "rag_notes.txt",
+      "sample_document.txt"
+    ],
+    "evidence": [
+      "semantically similar to a user's question"
+    ],
+    "answer_keywords": [
+      "embedding"
+    ]
+  },
+  {
+    "id": "Q19",
+    "type": "graph",
+    "hops": 1,
+    "answerable": true,
+    "question": "How can a knowledge graph connect related information across documents?",
+    "expected_answer": "A knowledge graph represents entities and relationships; graph traversal connects related entities across documents.",
+    "supporting_sources": [
+      "sample_document.txt"
+    ],
+    "evidence": [
+      "graph traversal can connect related entities across multiple documents"
+    ],
+    "answer_keywords": [
+      "traversal",
+      "entities"
+    ]
+  },
+  {
+    "id": "Q20",
+    "type": "combined",
+    "hops": 1,
+    "answerable": true,
+    "question": "How do vector retrieval and knowledge graph retrieval complement each other in GraphRAG?",
+    "expected_answer": "GraphRAG combines semantic vector retrieval with knowledge graph retrieval to connect information from different sources.",
+    "supporting_sources": [
+      "sample_document.txt"
+    ],
+    "evidence": [
+      "combines knowledge graph retrieval with vector retrieval"
+    ],
+    "answer_keywords": [
+      "vector",
+      "graph"
+    ]
+  },
+  {
+    "id": "Q21",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which algorithm powers Neo4j's vector search, and who proposed it?",
+    "expected_answer": "Neo4j's vector index uses HNSW, proposed by Yu. A. Malkov and D. A. Yashunin.",
+    "supporting_sources": [
+      "neo4j_vector_index.txt",
+      "hnsw_algorithm.txt"
+    ],
+    "evidence": [
+      "hnsw algorithm",
+      "malkov"
+    ],
+    "answer_keywords": [
+      "hnsw",
+      "malkov"
+    ]
+  },
+  {
+    "id": "Q22",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which company developed the compact model that all-MiniLM-L6-v2 is built on?",
+    "expected_answer": "all-MiniLM-L6-v2 is built on MiniLM, which was developed by Microsoft Research.",
+    "supporting_sources": [
+      "sentence_transformers.txt",
+      "transformer_architecture.txt"
+    ],
+    "evidence": [
+      "built on minilm",
+      "developed by microsoft research"
+    ],
+    "answer_keywords": [
+      "microsoft"
+    ]
+  },
+  {
+    "id": "Q23",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Who first introduced the approach that Microsoft's graph-based retrieval method extends?",
+    "expected_answer": "GraphRAG extends retrieval-augmented generation, introduced by Patrick Lewis and colleagues at Facebook AI Research.",
+    "supporting_sources": [
+      "microsoft_graphrag.txt",
+      "rag_research_origins.txt"
+    ],
+    "evidence": [
+      "graphrag extends retrieval-augmented generation",
+      "patrick lewis"
+    ],
+    "answer_keywords": [
+      "lewis"
+    ]
+  },
+  {
+    "id": "Q24",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which community detection algorithm does Microsoft GraphRAG use, and who introduced it?",
+    "expected_answer": "GraphRAG applies the Leiden algorithm, introduced by Vincent Traag, Ludo Waltman and Nees Jan van Eck.",
+    "supporting_sources": [
+      "microsoft_graphrag.txt",
+      "community_detection.txt"
+    ],
+    "evidence": [
+      "applies the leiden algorithm",
+      "vincent traag"
+    ],
+    "answer_keywords": [
+      "leiden",
+      "traag"
+    ]
+  },
+  {
+    "id": "Q25",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Under which licence were the open-weight models offered by the LPU-based hosted API released?",
+    "expected_answer": "They are the gpt-oss models, released under the Apache 2.0 licence.",
+    "supporting_sources": [
+      "groq_inference.txt",
+      "openai_gpt_oss.txt"
+    ],
+    "evidence": [
+      "gpt-oss family released by openai",
+      "apache 2.0 licence"
+    ],
+    "answer_keywords": [
+      "apache"
+    ]
+  },
+  {
+    "id": "Q26",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "How does the algorithm behind Lucene-based vector search in Neo4j navigate its layers?",
+    "expected_answer": "The index uses HNSW: a search starts at the sparse top layer and greedily moves toward the query before descending.",
+    "supporting_sources": [
+      "neo4j_vector_index.txt",
+      "hnsw_algorithm.txt"
+    ],
+    "evidence": [
+      "apache lucene",
+      "upper layers contain few nodes"
+    ],
+    "answer_keywords": [
+      "layer"
+    ]
+  },
+  {
+    "id": "Q27",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Why would plain vector RAG struggle with the global questions that Microsoft's graph-based method targets?",
+    "expected_answer": "Standard RAG retrieves by similarity to the question and struggles when answers span many documents; community summaries address global questions.",
+    "supporting_sources": [
+      "microsoft_graphrag.txt",
+      "rag_research_origins.txt"
+    ],
+    "evidence": [
+      "global questions about an entire corpus",
+      "struggles when the answer depends on facts spread across several documents"
+    ],
+    "answer_keywords": [
+      "global"
+    ]
+  },
+  {
+    "id": "Q28",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "What vector dimension setting does a Neo4j vector index need to store all-MiniLM-L6-v2 embeddings?",
+    "expected_answer": "The index must be configured with 384 dimensions.",
+    "supporting_sources": [
+      "neo4j_vector_index.txt",
+      "sentence_transformers.txt"
+    ],
+    "evidence": [
+      "number of vector dimensions",
+      "384-dimensional"
+    ],
+    "answer_keywords": [
+      "384"
+    ]
+  },
+  {
+    "id": "Q29",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Why would duplicate entities hurt graph traversal that must bridge facts from two documents?",
+    "expected_answer": "Without entity resolution the graph fragments into duplicate nodes, so traversal cannot connect facts extracted from different documents.",
+    "supporting_sources": [
+      "entity_resolution.txt",
+      "multi_hop_question_answering.txt"
+    ],
+    "evidence": [
+      "graph traversal cannot connect facts",
+      "follow relationships"
+    ],
+    "answer_keywords": [
+      "duplicate",
+      "traversal"
+    ]
+  },
+  {
+    "id": "Q30",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which score-free fusion method merges BM25 and cosine-similarity result lists, and who proposed it?",
+    "expected_answer": "Reciprocal Rank Fusion, proposed by Gordon Cormack, Charles Clarke and Stefan Büttcher.",
+    "supporting_sources": [
+      "hybrid_search.txt",
+      "reciprocal_rank_fusion.txt"
+    ],
+    "evidence": [
+      "merge the two result lists with reciprocal rank fusion",
+      "gordon cormack"
+    ],
+    "answer_keywords": [
+      "cormack"
+    ]
+  },
+  {
+    "id": "Q31",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "all-MiniLM-L6-v2 is built on a compact model. Which organisation developed it, and which paper introduced the architecture it compresses?",
+    "expected_answer": "Microsoft Research developed MiniLM, which compresses Transformers introduced in Attention Is All You Need.",
+    "supporting_sources": [
+      "sentence_transformers.txt",
+      "transformer_architecture.txt"
+    ],
+    "evidence": [
+      "built on minilm",
+      "developed by microsoft research",
+      "attention is all you need"
+    ],
+    "answer_keywords": [
+      "microsoft",
+      "attention is all you need"
+    ]
+  },
+  {
+    "id": "Q32",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which algorithm groups related entities in Microsoft's graph-based RAG, and what weakness of the earlier Louvain method does it fix?",
+    "expected_answer": "The Leiden algorithm, which guarantees well-connected communities where Louvain can produce badly connected ones.",
+    "supporting_sources": [
+      "microsoft_graphrag.txt",
+      "community_detection.txt"
+    ],
+    "evidence": [
+      "applies the leiden algorithm",
+      "badly connected communities"
+    ],
+    "answer_keywords": [
+      "leiden",
+      "connected"
+    ]
+  },
+  {
+    "id": "Q33",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "Which retrieval approach from Facebook AI Research does Microsoft's graph-based variant extend, and which algorithm does the variant use to group entities?",
+    "expected_answer": "Retrieval-Augmented Generation; the variant applies the Leiden algorithm.",
+    "supporting_sources": [
+      "rag_research_origins.txt",
+      "microsoft_graphrag.txt"
+    ],
+    "evidence": [
+      "facebook ai research",
+      "applies the leiden algorithm"
+    ],
+    "answer_keywords": [
+      "leiden"
+    ]
+  },
+  {
+    "id": "Q34",
+    "type": "multi_hop",
+    "hops": 2,
+    "answerable": true,
+    "question": "How are BM25 and vector rankings merged, who proposed the method, and why does it need no score normalisation?",
+    "expected_answer": "With Reciprocal Rank Fusion (Cormack, Clarke and Büttcher), which uses only ranks.",
+    "supporting_sources": [
+      "hybrid_search.txt",
+      "reciprocal_rank_fusion.txt"
+    ],
+    "evidence": [
+      "merge the two result lists with reciprocal rank fusion",
+      "cormack",
+      "needs no score normalisation"
+    ],
+    "answer_keywords": [
+      "cormack",
+      "rank"
+    ]
+  },
+  {
+    "id": "Q35",
+    "type": "multi_hop",
+    "hops": 3,
+    "answerable": true,
+    "question": "How can a knowledge graph be stored and queried in Neo4j, and which ISO standard did its query language influence?",
+    "expected_answer": "Entities become nodes and predicates edges in Neo4j's property graph, queried with Cypher, which influenced GQL (ISO/IEC 39075).",
+    "supporting_sources": [
+      "knowledge_graphs.txt",
+      "neo4j_overview.txt",
+      "cypher_query_language.txt"
+    ],
+    "evidence": [
+      "entities become nodes and predicates become labelled edges",
+      "property graph model",
+      "iso/iec 39075"
+    ],
+    "answer_keywords": [
+      "cypher",
+      "gql"
+    ]
+  },
+  {
+    "id": "Q36",
+    "type": "cross_document",
+    "hops": 2,
+    "answerable": true,
+    "question": "Compare the data models and query languages of Neo4j and RDF stores.",
+    "expected_answer": "Neo4j uses the property graph model queried with Cypher; RDF uses triples queried with SPARQL.",
+    "supporting_sources": [
+      "property_graph_vs_rdf.txt"
+    ],
+    "evidence": [
+      "queried with cypher",
+      "queried with sparql"
+    ],
+    "answer_keywords": [
+      "cypher",
+      "sparql"
+    ]
+  },
+  {
+    "id": "Q37",
+    "type": "cross_document",
+    "hops": 2,
+    "answerable": true,
+    "question": "Explain how Neo4j and Cypher can support a knowledge graph used by a GraphRAG system.",
+    "expected_answer": "Neo4j stores nodes and relationships, Cypher queries them, and traversal connects entities across documents for GraphRAG.",
+    "supporting_sources": [
+      "neo4j_notes.txt",
+      "sample_document.txt"
+    ],
+    "evidence": [
+      "cypher is neo4j's declarative query language",
+      "graph traversal can connect related entities across multiple documents"
+    ],
+    "answer_keywords": [
+      "cypher",
+      "traversal"
+    ]
+  },
+  {
+    "id": "Q38",
+    "type": "pipeline_reasoning",
+    "hops": 1,
+    "answerable": true,
+    "question": "Describe how information moves from document loading to answer generation in a RAG pipeline, and where vector retrieval fits.",
+    "expected_answer": "Documents are loaded, chunked, embedded, relevant chunks retrieved by vector similarity, and passed to a language model.",
+    "supporting_sources": [
+      "rag_notes.txt"
+    ],
+    "evidence": [
+      "loads documents, splits them into chunks"
+    ],
+    "answer_keywords": [
+      "chunk",
+      "embedding",
+      "language model"
+    ]
+  },
+  {
+    "id": "Q39",
+    "type": "unanswerable",
+    "hops": 0,
+    "answerable": false,
+    "question": "Who invented the Python programming language?",
+    "expected_answer": "The documents do not contain this information.",
+    "supporting_sources": [],
+    "evidence": [],
+    "answer_keywords": []
+  },
+  {
+    "id": "Q40",
+    "type": "unanswerable",
+    "hops": 0,
+    "answerable": false,
+    "question": "What is the monthly price of a Neo4j Aura Professional instance?",
+    "expected_answer": "The documents do not contain this information.",
+    "supporting_sources": [],
+    "evidence": [],
+    "answer_keywords": []
+  },
+  {
+    "id": "Q41",
+    "type": "unanswerable",
+    "hops": 0,
+    "answerable": false,
+    "question": "Which benchmark dataset did Microsoft use to measure GraphRAG's win rate against vector RAG?",
+    "expected_answer": "The documents do not contain this information.",
+    "supporting_sources": [],
+    "evidence": [],
+    "answer_keywords": []
+  },
+  {
+    "id": "Q42",
+    "type": "unanswerable",
+    "hops": 0,
+    "answerable": false,
+    "question": "What chunk size does the sentence-transformers library use by default?",
+    "expected_answer": "The documents do not contain this information.",
+    "supporting_sources": [],
+    "evidence": [],
+    "answer_keywords": []
+  },
+  {
+    "id": "Q43",
+    "type": "unanswerable",
+    "hops": 0,
+    "answerable": false,
+    "question": "Who won the FIFA World Cup in 2018?",
+    "expected_answer": "The documents do not contain this information.",
+    "supporting_sources": [],
+    "evidence": [],
+    "answer_keywords": []
+  }
+]

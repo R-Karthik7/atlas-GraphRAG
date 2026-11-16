@@ -1,0 +1,7 @@
+# Origins of Retrieval-Augmented Generation
+
+The term Retrieval-Augmented Generation was introduced in a 2020 paper by Patrick Lewis and colleagues at Facebook AI Research, working with University College London and New York University. The paper combined a pre-trained sequence-to-sequence generator with a dense retriever over Wikipedia.
+
+The authors described the generator as parametric memory and the retrieved Wikipedia passages as non-parametric memory. Grounding answers in retrieved passages helps a language model give up-to-date and traceable answers, and it reduces hallucination compared with relying on model weights alone.
+
+Standard RAG retrieves passages by similarity to the question, so it struggles when the answer depends on facts spread across several documents.

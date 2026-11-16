@@ -1,0 +1,5 @@
+# HNSW: Hierarchical Navigable Small World Graphs
+
+HNSW stands for Hierarchical Navigable Small World. It is an approximate nearest neighbour search algorithm proposed by Yu. A. Malkov and D. A. Yashunin in a paper first released in 2016.
+
+HNSW organises vectors into a multi-layer graph. Upper layers contain few nodes with long-range links that allow fast navigation, and the bottom layer contains every vector. A search starts at the top layer and greedily moves toward the query before descending to the next layer. Search time scales roughly logarithmically with the number of vectors, and HNSW trades a small amount of recall for large speed gains compared with exact search.

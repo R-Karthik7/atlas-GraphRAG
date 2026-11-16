@@ -1,0 +1,5 @@
+# Reciprocal Rank Fusion
+
+Reciprocal Rank Fusion, or RRF, is a method for combining several ranked lists into one. It was proposed by Gordon Cormack, Charles Clarke and Stefan Büttcher at SIGIR 2009.
+
+Each document receives a score equal to the sum of 1 divided by (k plus its rank) across every list in which it appears. The original paper used k equal to 60. Because RRF uses only ranks, it needs no score normalisation, which makes it suitable for fusing lists whose scores are on different scales, such as cosine similarity and graph scores.

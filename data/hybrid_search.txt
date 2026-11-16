@@ -1,0 +1,5 @@
+# Hybrid Search
+
+Hybrid search combines lexical retrieval with dense vector retrieval. Lexical methods such as BM25 match exact terms, while dense retrieval matches meaning. BM25 grew out of the probabilistic relevance framework and was developed in the Okapi system at City University London.
+
+Search engines commonly merge the two result lists with Reciprocal Rank Fusion, because BM25 scores and cosine similarities cannot be compared directly. Hybrid search improves recall for queries that contain rare keywords or identifiers.

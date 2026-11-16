@@ -1,0 +1,5 @@
+# Neo4j Overview
+
+Neo4j is a native graph database developed by Neo4j, Inc., a company that was originally called Neo Technology. The database is implemented in Java. The company was co-founded by Emil Eifrem, Johan Svensson and Peter Neubauer.
+
+Neo4j uses the property graph model, in which data is stored as nodes, relationships and properties. Nodes carry labels, and relationships always have a type and a direction. Neo4j Aura is the fully managed cloud service for running Neo4j without operating servers.

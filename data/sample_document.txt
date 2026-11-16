@@ -1,0 +1,11 @@
+# GraphRAG Learning Notes
+
+Graph databases store information as nodes and relationships. Neo4j is a graph database that supports the Cypher query language.
+
+Retrieval-Augmented Generation (RAG) retrieves relevant information from external documents and provides it to a language model to generate grounded answers.
+
+Vector retrieval uses embeddings to identify text that is semantically similar to a user's question.
+
+A knowledge graph represents entities and their relationships. Graph traversal can connect related entities across multiple documents.
+
+GraphRAG combines knowledge graph retrieval with vector retrieval to help answer questions that require connecting information from different sources.

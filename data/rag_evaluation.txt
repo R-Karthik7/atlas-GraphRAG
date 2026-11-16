@@ -1,0 +1,7 @@
+# Evaluating RAG Systems
+
+Evaluating a RAG system means measuring retrieval quality and answer quality separately. Retrieval is often scored with precision, recall, hit rate and mean reciprocal rank, while answers are scored for correctness, relevance and faithfulness.
+
+Faithfulness measures whether every claim in an answer is supported by the retrieved context. RAGAS, introduced by Shahul Es and colleagues in 2023, is an evaluation framework that scores faithfulness and answer relevance without requiring human-written reference answers.
+
+A system should also be tested on questions that the documents cannot answer, because a trustworthy RAG system must refuse rather than hallucinate.

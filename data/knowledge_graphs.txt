@@ -1,0 +1,5 @@
+# Knowledge Graphs
+
+A knowledge graph stores facts as triples made of a subject, a predicate and an object, such as (Neo4j, IS_A, graph database). Entities become nodes and predicates become labelled edges. The phrase gained wide attention in 2012 when Google announced its Google Knowledge Graph to improve search results.
+
+Knowledge graphs support multi-hop reasoning because a query can follow edges from one entity to the next. Building a graph from raw text requires entity extraction, relation extraction and entity resolution. Large language models are now often used to extract triples from text chunks.

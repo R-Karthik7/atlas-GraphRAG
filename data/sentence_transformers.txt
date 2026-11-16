@@ -1,0 +1,5 @@
+# Sentence Transformers
+
+Sentence-BERT, also called SBERT, was introduced by Nils Reimers and Iryna Gurevych in 2019. It adapts the BERT network with siamese and triplet structures so that sentences are mapped to fixed-size vectors that can be compared with cosine similarity. The sentence-transformers Python library packages SBERT-style models and makes embeddings easy to compute.
+
+The model all-MiniLM-L6-v2 is one of the most widely used models in the library. It produces 384-dimensional embeddings and was fine-tuned on more than one billion sentence pairs. The model is built on MiniLM, a compact model with six transformer layers, which makes it fast enough to run on a CPU.

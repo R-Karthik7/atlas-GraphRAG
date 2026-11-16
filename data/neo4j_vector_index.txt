@@ -1,0 +1,5 @@
+# Neo4j Vector Indexes
+
+Neo4j supports vector indexes that store embeddings as node properties and allow similarity search. Vector indexes were introduced in Neo4j 5.11 as a beta feature and became generally available in Neo4j 5.13.
+
+Internally, a Neo4j vector index is built on Apache Lucene and uses the HNSW algorithm to find approximate nearest neighbours. An index is configured with a number of vector dimensions and a similarity function, which can be cosine or Euclidean. Queries run through the procedure db.index.vector.queryNodes, which returns nodes together with a similarity score.

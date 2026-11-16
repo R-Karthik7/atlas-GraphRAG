@@ -1,0 +1,7 @@
+# Multi-Hop Question Answering
+
+A multi-hop question cannot be answered from a single passage. The reader must find one fact, identify a bridge entity, and then use that entity to find a second fact in another document.
+
+HotpotQA, released in 2018 by Zhilin Yang and colleagues, is a well-known benchmark with about 113,000 Wikipedia-based question-answer pairs. It includes supporting-fact annotations so that systems can be checked for finding the right evidence.
+
+Vector retrieval often fails on multi-hop questions because the bridge entity is not mentioned in the question, so the second passage is not similar to the question text. Graph traversal can follow relationships from entities in the question to the bridge entity and reach the second passage.
