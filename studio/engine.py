@@ -31,7 +31,7 @@ class UserError(ValueError):
 
 
 class Atlas:
-    def __init__(self, db_path=None, data_dir=None, upload_dir=None, import_builtin=True):
+    def __init__(self, db_path=None, data_dir=None, upload_dir=None, import_builtin=False):
         self.root = ROOT
         db_path = db_path or os.getenv("ATLAS_DB") or (ROOT / ".cache" / "atlas.db")
         self.store = Store(db_path)
